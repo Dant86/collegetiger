@@ -1,0 +1,19 @@
+{
+  "name": "collegetiger",
+  "version": "1.0.0",
+  "description": "A website for Dante Vaisbort's College Advice venture.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dant86/collegetiger.git"
+  },
+  "author": "Vedant Pathak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dant86/collegetiger/issues"
+  },
+  "homepage": "https://github.com/Dant86/collegetiger#readme"
+}
