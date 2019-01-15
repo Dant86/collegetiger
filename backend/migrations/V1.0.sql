@@ -5,9 +5,8 @@ CREATE TABLE blog_posts (
     date_posted   DATETIME     NOT NULL,
     body          TEXT         NOT NULL,
     thumbnail_url VARCHAR(256),
-FOREIGN KEY (author_id) references admins (id)
-PRIMARY KEY (id)
-)
+FOREIGN KEY (author_id) REFERENCES admins (id),
+PRIMARY KEY (id))
 
 CREATE TABLE admins (
     id            INT          NOT NULL AUTO_INCREMENT,
@@ -15,8 +14,7 @@ CREATE TABLE admins (
     last_name     VARCHAR(64)  NOT NULL,
     email         VARCHAR(128) NOT NULL,
     password_hash VARCHAR(256) NOT NULL,
-PRIMARY KEY (id)
-)
+PRIMARY KEY (id))
 
 CREATE TABLE transactions (
     id               INT          NOT NULL AUTO_INCREMENT,
@@ -26,5 +24,4 @@ CREATE TABLE transactions (
     service          VARCHAR(64)  NOT NULL,
     price            FLOAT        NOT NULL,
     transaction_date DATETIME     NOT NULL,
-PRIMARY KEY (id)
-)
+PRIMARY KEY (id))
